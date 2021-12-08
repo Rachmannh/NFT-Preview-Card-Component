@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--main-bg-dark-blue);
+}
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg-dark-blue: hsl(217, 54%, 11%);
+  --card-bg-dark-blue: hsl(216, 50%, 16%);
+  --line-dark-blue: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.card {
+  width: 350px;
+  height: 590px;
+  background-color: var(--card-bg-dark-blue);
+  margin-top: 40px;
+  margin-left: -50px;
+  border-radius: 1rem;
+}
+
+.card-img-top {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 290px;
+  height: 290px;
+  border-radius: 1rem;
+}
+
+.overlay {
+  position: absolute;
+  right: 555px;
+  top: 69px;
+  width: 290px;
+  height: 290px;
+  opacity: 0;
+  color: #fafafa !important;
+  transition: 0.2s ease-in;
+  background-color: var(--cyan);
+  border-radius: 1rem;
+}
+
+.images:hover .overlay {
+  opacity: 0.2;
+  color: #fafafa;
+}
+
+.icon {
+  color: #fafafa !important;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.bi-eye {
+  font-size: 55px !important;
+  top: -20px;
+  color: #fafafa !important;
+}
+
+.card-title {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 38px;
+  color: var(--white);
+  font-family: "Outfit", sans-serif !important;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card-title:hover {
+  color: var(--cyan);
+  transition: 0.5s;
+}
+
+.card-text {
+  width: 310px;
+  position: relative;
+  font-size: 20px;
+  top: 55px;
+  left: 38px;
+  color: var(--soft-blue);
+  font-weight: 300;
+  font-family: "Outfit", sans-serif !important;
+}
+
+.price {
+  width: 800px;
+  display: flex;
+}
+
+.price-image {
+  position: relative;
+  width: 10px;
+  height: 20px;
+  top: 80px;
+  left: 38px;
+}
+
+.price-text-1 {
+  position: relative;
+  top: 79px;
+  left: 48px;
+  font-family: "Outfit", sans-serif !important;
+  color: var(--cyan);
+  font-size: 18px;
+}
+
+.price-text-2 img {
+  position: relative;
+  top: 79px;
+  left: 110px;
+}
+
+.timing {
+  position: relative;
+  top: 79px;
+  left: 120px;
+  font-size: 18px;
+  color: var(--soft-blue);
+  font-size: 300 !important;
+  font-family: "Outfit", sans-serif !important;
+}
+
+.line {
+  position: relative;
+  width: 275px;
+  right: 155px;
+  top: 100px;
+  border-bottom: 1px solid #fafafa71;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-image {
+  position: relative;
+  top: 120px;
+  left: 34px;
+  width: 40px;
+  border: 2px solid #fafafa;
+  border-radius: 30px;
+}
+
+.content {
+  position: relative;
+  top: 120px;
+  left: 50px;
+  font-family: "Outfit", sans-serif !important;
+  font-size: 16px;
+}
+
+.creation {
+  color: var(--soft-blue);
+  font-size: 14px;
+}
+
+.name {
+  color: #fafafa;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.attribution {
+  position: relative;
+  top: 20px;
+  color: #fafafa;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #fafafa91;
+}
+
+.attribution a:hover {
+  color: var(--soft-blue);
+  transition: 0.5s;
+}

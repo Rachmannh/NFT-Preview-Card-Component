@@ -1,0 +1,10 @@
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 350px;
+    height: 590px;
+    background-color: var(--card-bg-dark-blue);
+    margin-top: 40px;
+    margin-left: 2px;
+    border-radius: 1rem;
+  }
+}
